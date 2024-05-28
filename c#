@@ -1,0 +1,35 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double m, b, t, c, z;
+
+        // Запрос ввода исходных данных у пользователя
+        Console.Write("Введите значение m: ");
+        m = double.Parse(Console.ReadLine());
+
+        Console.Write("Введите значение b: ");
+        b = double.Parse(Console.ReadLine());
+
+        Console.Write("Введите значение t: ");
+        t = double.Parse(Console.ReadLine());
+
+        Console.Write("Введите значение c: ");
+        c = double.Parse(Console.ReadLine());
+
+        // Вычисление значения выражения z
+        z = m * Math.Cos(b * t * Math.Sin(t)) + c;
+
+        // Вывод исходных данных и результата вычислений
+        Console.WriteLine("\nИсходные данные:");
+        Console.WriteLine($"m = {m}");
+        Console.WriteLine($"b = {b}");
+        Console.WriteLine($"t = {t}");
+        Console.WriteLine($"c = {c}");
+
+        Console.WriteLine("\nРезультат вычислений:");
+        Console.WriteLine($"z = {z}");
+    }
+}
